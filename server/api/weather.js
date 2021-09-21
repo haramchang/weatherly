@@ -27,9 +27,7 @@ router.get("/:state", async (req, res, next) => {
   try {
     const state = req.params.state
     const data = await Weather.findOne({
-      where: {
-        state
-      }
+      where: { state }
     })
     res.send(data)
   } catch (error) {
@@ -42,9 +40,7 @@ router.put("/:state", async (req, res, next) => {
   try {
     const state = req.params.state
     const updatedState = await Weather.findOne({
-      where: {
-        state
-      }
+      where: { state }
     })
     res.send(updatedState)
   } catch (error) {

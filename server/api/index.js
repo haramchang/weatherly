@@ -5,7 +5,7 @@ module.exports = router
 router.use('/weather', require('./weather'))
 
 // api/states
-router.use('/states', require('./states'))
+router.use('/weatherapi', require('./weatherapi'))
 
 // api/users
 router.use('/users', require('./users'))
