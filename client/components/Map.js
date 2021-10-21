@@ -3,18 +3,10 @@ import { connect } from 'react-redux'
 import { tempColors, statesAbbr } from "../data/data"
 
 export const Map = () => {
-  const [weather, setWeather] = useState([])
-
-  useEffect(() => {
-    statesAbbr.forEach(async (state) => {
-      const stateName = state.name
-
-    })
-  })
-
+  const svg = document.getElementById("my_dataviz")
+  console.log(svg)
   return (
-    <div>
-      This is ze map
+    <div id="map">
     </div>
   )
 }
